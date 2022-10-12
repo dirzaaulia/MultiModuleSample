@@ -1,7 +1,6 @@
-package com.bts.id.domain.utils
+package com.dirzaaulia.multimodulesample.domain.util
 
 import androidx.paging.PagingSource
-import com.dirzaaulia.multimodulesample.domain.util.NotFoundException
 
 val ResponseResult<*>?.isInitialState get() = this != null && this is ResponseResult.Success && data == null
 

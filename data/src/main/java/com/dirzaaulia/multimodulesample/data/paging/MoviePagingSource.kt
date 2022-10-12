@@ -2,7 +2,7 @@ package com.dirzaaulia.multimodulesample.data.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.bts.id.domain.utils.pagingSucceeded
+import com.dirzaaulia.multimodulesample.domain.util.pagingSucceeded
 import com.dirzaaulia.multimodulesample.data.source.ServiceDataSource
 import com.dirzaaulia.multimodulesample.domain.model.Movie
 

@@ -1,4 +1,4 @@
-package com.bts.id.domain.utils
+package com.dirzaaulia.multimodulesample.domain.util
 
 /**
  * A generic class that holds a value or an exception
@@ -10,10 +10,10 @@ sealed class ResponseResult<out R> {
 }
 
 inline fun <T> executeWithResponse(body: () -> T): ResponseResult<T> {
-  return try {
-    ResponseResult.Success(body.invoke())
-  } catch (throwable: Throwable) {
-    throwable.printStackTrace()
-    ResponseResult.Error(throwable)
-  }
+    return try {
+        ResponseResult.Success(body.invoke())
+    } catch (throwable: Throwable) {
+        throwable.printStackTrace()
+        ResponseResult.Error(throwable)
+    }
 }
